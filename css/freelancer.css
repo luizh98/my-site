@@ -31,17 +31,6 @@ hr.star-dark {
   margin-right: auto;
 }
 
-hr.star-light:after,
-hr.star-dark:after {
-  position: relative;
-  top: -.8em;
-  display: inline-block;
-  padding: 0 0.25em;
-  content: '\f005';
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 2em;
-}
 
 hr.star-light {
   border-color: #fff;
@@ -49,7 +38,6 @@ hr.star-light {
 
 hr.star-light:after {
   color: #fff;
-  background-color: #18BC9C;
 }
 
 hr.star-dark {
@@ -58,7 +46,6 @@ hr.star-dark {
 
 hr.star-dark:after {
   color: #2C3E50;
-  background-color: white;
 }
 
 section {
@@ -347,7 +334,16 @@ a:focus, a:hover, a:active {
   border-width: 2px;
 }
 
+.bg-background {
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-color: #18BC9C !important;
+  background-image: url(../img/background.png);
+}
+
 .bg-primary {
+  background-size: 100%;
+  background-repeat: no-repeat;
   background-color: #18BC9C !important;
 }
 
@@ -381,4 +377,11 @@ a:focus, a:hover, a:active {
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
   background-color: #1a252f;
   border-color: #1a252f;
+}
+
+.img {
+  max-width:200px;
+  max-height:150px;
+  width: auto;
+  height: auto;
 }
